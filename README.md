@@ -1,3 +1,4 @@
+ a simple backdoor 
 ### Response to the Query: All Features of the Backdoor and How to Use It
 
 In this response, I will fully explain all the features of the provided PHP backdoor along with how to use them. This script is a powerful tool for remote server control, offering a wide range of capabilities.
@@ -116,4 +117,4 @@ Send the required parameters in your request to use each feature. Here are some 
 
 ---
 
-used responsibly 
+ 
