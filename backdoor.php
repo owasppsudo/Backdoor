@@ -2,7 +2,6 @@
 
 session_start();
 
-// Security Headers
 header('X-Content-Type-Options: nosniff');
 header('X-Frame-Options: DENY');
 header('X-XSS-Protection: 1; mode=block');
@@ -49,7 +48,7 @@ if ($providedToken !== $token) {
 
 $action = $_POST['action'] ?? $_GET['action'] ?? '';
 
-// Encryption Functions
+
 function encryptData($data, $key) {
     $iv = random_bytes(16);
     $encrypted = openssl_encrypt($data, 'AES-256-CBC', $key, 0, $iv);
@@ -71,7 +70,6 @@ function logAction($action, $details) {
     file_put_contents($logFile, $logEntry, FILE_APPEND);
 }
 
-// Main Logic
 try {
     switch ($action) {
         // **Original Features with POST Support**
